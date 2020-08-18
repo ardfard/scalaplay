@@ -1,0 +1,7 @@
+./*/target
+./*/.metals
+./*/.bloop
+*.lock
+.tmp
+.gcroots
+target

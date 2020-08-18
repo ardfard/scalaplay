@@ -1,0 +1,180 @@
+LOG:  database system was shut down at 2020-08-15 21:21:39 WIB
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 441453) running in data directory "/home/ardfard/Documents/codes/scalaplay/.tmp/mydb"?
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2020-08-15 21:29:19 WIB
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "ardfard" does not exist
+ERROR:  syntax error at or near "exit" at character 1
+STATEMENT:  exit
+	exit
+	exit
+	DROP DATABASE ardfard;
+ERROR:  syntax error at or near "exit" at character 1
+STATEMENT:  exit
+	exit
+	exit
+	DROP DATABASE ardfard
+	DROP DATABASE ardfard;
+ERROR:  cannot drop the currently open database
+STATEMENT:  drop database ardfard;
+ERROR:  syntax error at or near "c" at character 1
+STATEMENT:  c postgres
+	;
+LOG:  database system was interrupted; last known up at 2020-08-15 21:53:46 WIB
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  invalid record length at 0/14EF598: wanted 24, got 0
+LOG:  redo is not required
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  syntax error at or near ")" at character 74
+STATEMENT:  create table auth.account (
+	id uuid default uuid_generate_v4 (),
+	fullName)
+	;
+ERROR:  schema "auth" does not exist at character 14
+STATEMENT:  create table auth.account (
+	id uuid default uuid_generate_v4 (),
+	fullName VARCHAR not null)
+	;
+ERROR:  function uuid_generate_v4() does not exist
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+STATEMENT:  create table auth.account (
+	id uuid default uuid_generate_v4 (),
+	fullName VARCHAR not null)
+	;
+ERROR:  syntax error at or near "," at character 44
+STATEMENT:  create table auth.account (
+	id uuid default,
+	fullName VARCHAR not null)
+	;
+ERROR:  syntax error at or near "auth" at character 6
+STATEMENT:  drop auth;
+ERROR:  cannot drop schema auth because other objects depend on it
+DETAIL:  table auth.account depends on schema auth
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+STATEMENT:  drop schema auth;
+ERROR:  syntax error at or near "exit" at character 1
+STATEMENT:  exit
+	;
+LOG:  received smart shutdown request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2020-08-16 23:12:50 WIB
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "ardfard" does not exist
+ERROR:  relation "play_evolutions" does not exist at character 72
+STATEMENT:  select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+ERROR:  schema "auth" does not exist
+STATEMENT:  CREATE TABLE account (
+	id         UUID    NOT NULL PRIMARY KEY,
+	full_name  VARCHAR,
+	email      VARCHAR,
+	activated  BOOLEAN NOT NULL,
+	avatar_url VARCHAR,
+	CONSTRAINT auth_user_role_id_fk FOREIGN KEY (role_id) REFERENCES auth.role (id)
+	)
+ERROR:  syntax error at or near "play_evolutions" at character 6
+STATEMENT:  drop play_evolutions;
+ERROR:  relation "play_evolutions" does not exist at character 72
+STATEMENT:  select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+ERROR:  syntax error at or near ")" at character 154
+STATEMENT:  CREATE TABLE account (
+	id         UUID    NOT NULL PRIMARY KEY,
+	full_name  VARCHAR,
+	email      VARCHAR,
+	activated  BOOLEAN NOT NULL,
+	avatar_url VARCHAR,
+	)
+ERROR:  relation "play_evolutions" does not exist at character 72
+STATEMENT:  select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+ERROR:  syntax error at or near ")" at character 154
+STATEMENT:  CREATE TABLE account (
+	id         UUID    NOT NULL PRIMARY KEY,
+	full_name  VARCHAR,
+	email      VARCHAR,
+	activated  BOOLEAN NOT NULL,
+	avatar_url VARCHAR,
+	)
+ERROR:  syntax error at or near "exit" at character 1
+STATEMENT:  exit
+	:q
+	CREATE TABLE account (
+	  id         UUID    NOT NULL PRIMARY KEY,
+	  full_name  VARCHAR,
+	  email      VARCHAR,
+	  activated  BOOLEAN NOT NULL,
+	  avatar_url VARCHAR,
+	);
+ERROR:  syntax error at or near ")" at character 164
+STATEMENT:  CREATE TABLE account (
+	  id         UUID    NOT NULL PRIMARY KEY,
+	  full_name  VARCHAR,
+	  email      VARCHAR,
+	  activated  BOOLEAN NOT NULL,
+	  avatar_url VARCHAR,
+	);
+ERROR:  syntax error at or near "ls" at character 1
+STATEMENT:  ls
+	drop table play_evolutions;
+ERROR:  syntax error at or near "ls" at character 1
+STATEMENT:  ls
+	drop table play_evolutions;
+ERROR:  relation "play_evolutions" does not exist at character 72
+STATEMENT:  select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+ERROR:  column "user_id" referenced in foreign key constraint does not exist
+STATEMENT:  CREATE TABLE account_login_info (
+	account_id       UUID   NOT NULL,
+	login_info_id BIGINT NOT NULL,
+	CONSTRAINT user_login_info_user_id_fk FOREIGN KEY (user_id) REFERENCES account (id),
+	CONSTRAINT user_login_info_login_info_id_fk FOREIGN KEY (login_info_id) REFERENCES login_info (id)
+	)
+ERROR:  relation "play_evolutions" does not exist at character 72
+STATEMENT:  select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+ERROR:  relation "account" already exists
+STATEMENT:  CREATE TABLE account (
+	id         UUID    NOT NULL PRIMARY KEY,
+	full_name  VARCHAR,
+	email      VARCHAR,
+	activated  BOOLEAN NOT NULL,
+	avatar_url VARCHAR
+	)
+ERROR:  table "login_info_id_seq" does not exist
+STATEMENT:  drop table login_info_id_seq;
+ERROR:  sequence "login_info_id_seq" does not exist
+STATEMENT:  drop sequence login_info_id_seq;
+ERROR:  index "login_info_id_seq" does not exist
+STATEMENT:  drop index login_info_id_seq;
+ERROR:  syntax error at or near "constraint" at character 6
+STATEMENT:  drop constraint login_info_id_seq;
+ERROR:  relation "play_evolutions" does not exist at character 72
+STATEMENT:  select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+ERROR:  relation "play_evolutions" does not exist at character 72
+STATEMENT:  select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%'
+FATAL:  terminating connection due to unexpected postmaster exit
+FATAL:  terminating connection due to unexpected postmaster exit
+FATAL:  terminating connection due to unexpected postmaster exit
+LOG:  database system was interrupted; last known up at 2020-08-17 22:33:41 WIB
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  redo starts at 0/1600CA8
+LOG:  invalid record length at 0/1663908: wanted 24, got 0
+LOG:  redo done at 0/16638E0
+LOG:  last completed transaction was at log time 2020-08-17 22:34:09.538978+07
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  role "root" does not exist
+FATAL:  database "accounts_development" does not exist

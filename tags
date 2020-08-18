@@ -1,0 +1,81 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	Development	//
+Assets	play-ground/target/scala-2.13/routes/main/controllers/routes.java	/^    public static final controllers.javascript.ReverseAssets Assets = new controllers.javascript.ReverseAssets(RoutesPrefix.byNamePrefix());$/;"	f	class:routes.javascript
+Assets	play-ground/target/scala-2.13/routes/main/controllers/routes.java	/^  public static final controllers.ReverseAssets Assets = new controllers.ReverseAssets(RoutesPrefix.byNamePrefix());$/;"	f	class:routes
+HomeController	play-ground/target/scala-2.13/routes/main/controllers/routes.java	/^    public static final controllers.javascript.ReverseHomeController HomeController = new controllers.javascript.ReverseHomeController(RoutesPrefix.byNamePrefix());$/;"	f	class:routes.javascript
+HomeController	play-ground/target/scala-2.13/routes/main/controllers/routes.java	/^  public static final controllers.ReverseHomeController HomeController = new controllers.ReverseHomeController(RoutesPrefix.byNamePrefix());$/;"	f	class:routes
+account	play-ground/conf/evolutions/default/1.sql	/^CREATE TABLE account ($/;"	t
+account	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^CREATE TABLE account ($/;"	t
+account.activated	play-ground/conf/evolutions/default/1.sql	/^  activated  BOOLEAN NOT NULL,$/;"	F
+account.activated	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  activated  BOOLEAN NOT NULL,$/;"	F
+account.avatar_url	play-ground/conf/evolutions/default/1.sql	/^  avatar_url VARCHAR$/;"	F
+account.avatar_url	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  avatar_url VARCHAR$/;"	F
+account.email	play-ground/conf/evolutions/default/1.sql	/^  email      VARCHAR,$/;"	F
+account.email	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  email      VARCHAR,$/;"	F
+account.full_name	play-ground/conf/evolutions/default/1.sql	/^  full_name  VARCHAR,$/;"	F
+account.full_name	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  full_name  VARCHAR,$/;"	F
+account.id	play-ground/conf/evolutions/default/1.sql	/^  id         UUID    NOT NULL PRIMARY KEY,$/;"	F
+account.id	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  id         UUID    NOT NULL PRIMARY KEY,$/;"	F
+account_login_info	play-ground/conf/evolutions/default/1.sql	/^CREATE TABLE account_login_info ($/;"	t
+account_login_info	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^CREATE TABLE account_login_info ($/;"	t
+account_login_info.account_id	play-ground/conf/evolutions/default/1.sql	/^  account_id       UUID   NOT NULL,$/;"	F
+account_login_info.account_id	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  account_id       UUID   NOT NULL,$/;"	F
+account_login_info.login_info_id	play-ground/conf/evolutions/default/1.sql	/^  login_info_id BIGINT NOT NULL,$/;"	F
+account_login_info.login_info_id	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  login_info_id BIGINT NOT NULL,$/;"	F
+controllers	play-ground/target/scala-2.13/routes/main/controllers/routes.java	/^package controllers;$/;"	p
+javascript	play-ground/target/scala-2.13/routes/main/controllers/routes.java	/^  public static class javascript {$/;"	c	class:routes
+login_info	play-ground/conf/evolutions/default/1.sql	/^CREATE TABLE login_info ($/;"	t
+login_info	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^CREATE TABLE login_info ($/;"	t
+login_info.id	play-ground/conf/evolutions/default/1.sql	/^  id           BIGSERIAL NOT NULL PRIMARY KEY,$/;"	F
+login_info.id	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  id           BIGSERIAL NOT NULL PRIMARY KEY,$/;"	F
+login_info.provider_id	play-ground/conf/evolutions/default/1.sql	/^  provider_id  VARCHAR,$/;"	F
+login_info.provider_id	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  provider_id  VARCHAR,$/;"	F
+login_info.provider_key	play-ground/conf/evolutions/default/1.sql	/^  provider_key VARCHAR$/;"	F
+login_info.provider_key	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  provider_key VARCHAR$/;"	F
+oauth1_info	play-ground/conf/evolutions/default/1.sql	/^CREATE TABLE oauth1_info ($/;"	t
+oauth1_info	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^CREATE TABLE oauth1_info ($/;"	t
+oauth1_info.id	play-ground/conf/evolutions/default/1.sql	/^  id            BIGSERIAL NOT NULL PRIMARY KEY,$/;"	F
+oauth1_info.id	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  id            BIGSERIAL NOT NULL PRIMARY KEY,$/;"	F
+oauth1_info.login_info_id	play-ground/conf/evolutions/default/1.sql	/^  login_info_id BIGINT    NOT NULL,$/;"	F
+oauth1_info.login_info_id	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  login_info_id BIGINT    NOT NULL,$/;"	F
+oauth1_info.secret	play-ground/conf/evolutions/default/1.sql	/^  secret        VARCHAR   NOT NULL,$/;"	F
+oauth1_info.secret	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  secret        VARCHAR   NOT NULL,$/;"	F
+oauth1_info.token	play-ground/conf/evolutions/default/1.sql	/^  token         VARCHAR   NOT NULL,$/;"	F
+oauth1_info.token	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  token         VARCHAR   NOT NULL,$/;"	F
+oauth2_info	play-ground/conf/evolutions/default/1.sql	/^CREATE TABLE oauth2_info ($/;"	t
+oauth2_info	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^CREATE TABLE oauth2_info ($/;"	t
+oauth2_info.access_token	play-ground/conf/evolutions/default/1.sql	/^  access_token  VARCHAR   NOT NULL,$/;"	F
+oauth2_info.access_token	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  access_token  VARCHAR   NOT NULL,$/;"	F
+oauth2_info.expires_in	play-ground/conf/evolutions/default/1.sql	/^  expires_in    INT,$/;"	F
+oauth2_info.expires_in	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  expires_in    INT,$/;"	F
+oauth2_info.id	play-ground/conf/evolutions/default/1.sql	/^  id            BIGSERIAL NOT NULL PRIMARY KEY,$/;"	F
+oauth2_info.id	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  id            BIGSERIAL NOT NULL PRIMARY KEY,$/;"	F
+oauth2_info.login_info_id	play-ground/conf/evolutions/default/1.sql	/^  login_info_id BIGINT    NOT NULL,$/;"	F
+oauth2_info.login_info_id	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  login_info_id BIGINT    NOT NULL,$/;"	F
+oauth2_info.refresh_token	play-ground/conf/evolutions/default/1.sql	/^  refresh_token VARCHAR,$/;"	F
+oauth2_info.refresh_token	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  refresh_token VARCHAR,$/;"	F
+oauth2_info.token_type	play-ground/conf/evolutions/default/1.sql	/^  token_type    VARCHAR,$/;"	F
+oauth2_info.token_type	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  token_type    VARCHAR,$/;"	F
+password_info	play-ground/conf/evolutions/default/1.sql	/^CREATE TABLE password_info ($/;"	t
+password_info	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^CREATE TABLE password_info ($/;"	t
+password_info.hasher	play-ground/conf/evolutions/default/1.sql	/^  hasher        VARCHAR NOT NULL,$/;"	F
+password_info.hasher	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  hasher        VARCHAR NOT NULL,$/;"	F
+password_info.login_info_id	play-ground/conf/evolutions/default/1.sql	/^  login_info_id BIGINT  NOT NULL,$/;"	F
+password_info.login_info_id	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  login_info_id BIGINT  NOT NULL,$/;"	F
+password_info.password	play-ground/conf/evolutions/default/1.sql	/^  password      VARCHAR NOT NULL,$/;"	F
+password_info.password	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  password      VARCHAR NOT NULL,$/;"	F
+password_info.salt	play-ground/conf/evolutions/default/1.sql	/^  salt          VARCHAR,$/;"	F
+password_info.salt	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  salt          VARCHAR,$/;"	F
+routes	play-ground/target/scala-2.13/routes/main/controllers/routes.java	/^public class routes {$/;"	c
+token	play-ground/conf/evolutions/default/1.sql	/^CREATE TABLE token ($/;"	t
+token	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^CREATE TABLE token ($/;"	t
+token.account_id	play-ground/conf/evolutions/default/1.sql	/^  account_id UUID        NOT NULL,$/;"	F
+token.account_id	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  account_id UUID        NOT NULL,$/;"	F
+token.expiry	play-ground/conf/evolutions/default/1.sql	/^  expiry  TIMESTAMPTZ NOT NULL,$/;"	F
+token.expiry	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  expiry  TIMESTAMPTZ NOT NULL,$/;"	F
+token.id	play-ground/conf/evolutions/default/1.sql	/^  id      UUID        NOT NULL PRIMARY KEY,$/;"	F
+token.id	play-ground/target/scala-2.13/classes/evolutions/default/1.sql	/^  id      UUID        NOT NULL PRIMARY KEY,$/;"	F
