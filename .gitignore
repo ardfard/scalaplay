@@ -1,6 +1,6 @@
-./*/target
-./*/.metals
-./*/.bloop
+*/target
+*/.metals
+*/.bloop
 *.lock
 .tmp
 .gcroots
