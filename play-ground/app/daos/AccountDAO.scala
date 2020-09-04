@@ -5,6 +5,7 @@ import scala.concurrent.{ExecutionContext, Future}
 import javax.inject.Inject
 import play.api.db.slick.{DatabaseConfigProvider, HasDatabaseConfigProvider}
 import slick.jdbc.JdbcProfile
+import com.google.inject.ImplementedBy
 
 import com.mohiva.play.silhouette.api.LoginInfo
 
@@ -13,6 +14,7 @@ import models.Account
 /**
   * Give access to Account object.
   */
+@ImplementedBy(classOf[AccountDAOImpl])
 trait AccountDAO {
 
   /**

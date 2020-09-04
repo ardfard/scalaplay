@@ -6,6 +6,8 @@
 !_TAG_PROGRAM_VERSION	Development	//
 Assets	play-ground/target/scala-2.13/routes/main/controllers/routes.java	/^    public static final controllers.javascript.ReverseAssets Assets = new controllers.javascript.ReverseAssets(RoutesPrefix.byNamePrefix());$/;"	f	class:routes.javascript
 Assets	play-ground/target/scala-2.13/routes/main/controllers/routes.java	/^  public static final controllers.ReverseAssets Assets = new controllers.ReverseAssets(RoutesPrefix.byNamePrefix());$/;"	f	class:routes
+Auth	play-ground/target/scala-2.13/routes/main/controllers/routes.java	/^    public static final controllers.javascript.ReverseAuth Auth = new controllers.javascript.ReverseAuth(RoutesPrefix.byNamePrefix());$/;"	f	class:routes.javascript
+Auth	play-ground/target/scala-2.13/routes/main/controllers/routes.java	/^  public static final controllers.ReverseAuth Auth = new controllers.ReverseAuth(RoutesPrefix.byNamePrefix());$/;"	f	class:routes
 HomeController	play-ground/target/scala-2.13/routes/main/controllers/routes.java	/^    public static final controllers.javascript.ReverseHomeController HomeController = new controllers.javascript.ReverseHomeController(RoutesPrefix.byNamePrefix());$/;"	f	class:routes.javascript
 HomeController	play-ground/target/scala-2.13/routes/main/controllers/routes.java	/^  public static final controllers.ReverseHomeController HomeController = new controllers.ReverseHomeController(RoutesPrefix.byNamePrefix());$/;"	f	class:routes
 account	play-ground/conf/evolutions/default/1.sql	/^CREATE TABLE account ($/;"	t

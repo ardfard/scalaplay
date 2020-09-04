@@ -86,8 +86,8 @@ trait DBTableDefinitions {
 
   class AccountLoginInfos(tag: Tag)
       extends Table[DBAccountLoginInfo](tag, "account_login_info") {
-    def accountID = column[UUID]("accountID")
-    def loginInfoId = column[Long]("loginInfoId")
+    def accountID = column[UUID]("account_id")
+    def loginInfoId = column[Long]("login_info_id")
     def * =
       (
         accountID,

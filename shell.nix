@@ -10,10 +10,9 @@ mkShell {
     sbt
     libsodium
     postgresql
+    ammonite
   ];
   JDBC_DATABASE_URL="postgres://127.0.0.1/playground";
   POSTGRES_USER="ardfard";
   POSTGRES_PASSWORD="";
-  LC_ALL="en_US.UTF-8";
-  LC_CTYPE="en_US.UTF-8";
 }

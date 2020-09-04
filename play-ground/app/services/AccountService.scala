@@ -25,9 +25,9 @@ trait AccountService extends IdentityService[Account] {
 
   def createOrUpdate(
       loginInfo: LoginInfo,
-      email: Option[String],
+      email: String,
       fullName: Option[String],
-      AvatarUrl: Option[String]
+      avatarUrl: Option[String]
   ): Future[Account]
 
   def setEmailActivated(account: Account): Future[Account]

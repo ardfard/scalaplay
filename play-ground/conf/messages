@@ -1,1 +1,15 @@
 # https://www.playframework.com/documentation/latest/ScalaI18N
+
+register.title = Please register first
+register.account = Register for new account
+error = Error!
+full.name = Full name
+register = Register!
+login = Login
+login.credentials = Insert your credentials here
+not.a.member = Not a member yet?
+sign.up.now = Register
+email = Email
+password = Password
+already.a.member = You're already registered!
+account.exists = Account already exists!

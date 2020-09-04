@@ -5,3 +5,6 @@
 .tmp
 .gcroots
 target
+.ammonite
+*.class
+**/*/.bloop

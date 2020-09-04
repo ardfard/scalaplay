@@ -178,3 +178,599 @@ LOG:  database system is ready to accept connections
 LOG:  autovacuum launcher started
 FATAL:  role "root" does not exist
 FATAL:  database "accounts_development" does not exist
+LOG:  database system was interrupted; last known up at 2020-08-18 18:27:25 WIB
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  invalid record length at 0/19AB4F0: wanted 24, got 0
+LOG:  redo is not required
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  terminating connection due to administrator command
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2020-08-19 22:10:52 WIB
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+LOG:  received smart shutdown request
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2020-08-20 15:58:07 WIB
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2020-08-21 23:48:34 WIB
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2020-08-22 12:47:37 WIB
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  column x4.accountID does not exist at character 154
+HINT:  Perhaps you meant to reference the column "x4.account_id".
+STATEMENT:  select x2."id", x2."activated", x2."full_name", x2."email", x2."avatar_url" from "login_info" x3, "account_login_info" x4, "account" x2 where (x2."id" = x4."accountID") and (((x3."provider_id" = 'credentials') and (x3."provider_key" = 'juragan10101@gmail.com')) and (x4."loginInfoId" = x3."id"))
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2020-08-22 22:03:49 WIB
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2020-08-24 12:36:04 WIB
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received smart shutdown request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2020-08-25 01:05:40 WIB
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  null value in column "persistence_token" violates not-null constraint
+DETAIL:  Failing row contains (1, null, t, 0, null, null, null, null, 2020-08-25 08:30:54.056459, 2020-08-25 08:30:54.056459).
+STATEMENT:  INSERT INTO "users" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+FATAL:  terminating connection due to administrator command
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2020-08-25 18:44:22 WIB
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
+ERROR:  null value in column "user_id" violates not-null constraint
+DETAIL:  Failing row contains (1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 2020-08-26 04:02:44.51364, 2020-08-26 04:02:44.51364, null, null, null).
+STATEMENT:  INSERT INTO "user_contexts" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 305656) running in data directory "/home/ardfard/Documents/codes/scalaplay/.tmp/mydb"?
+FATAL:  database "ardfard" does not exist
+FATAL:  database "accounts" does not exist
+FATAL:  database "account" does not exist
+FATAL:  database "accounts" does not exist
+ERROR:  syntax error at or near "exit" at character 1
+STATEMENT:  exit
+	;
+ERROR:  column "id" is of type bigint but expression is of type character varying at character 36
+HINT:  You will need to rewrite or cast the expression.
+STATEMENT:  insert into breached_users values ($1)
+ERROR:  column "id" is of type bigint but expression is of type character varying at character 36
+HINT:  You will need to rewrite or cast the expression.
+STATEMENT:  insert into breached_users values ($1)
+ERROR:  column "id" is of type bigint but expression is of type character varying at character 36
+HINT:  You will need to rewrite or cast the expression.
+STATEMENT:  insert into breached_users values ($1)
+ERROR:  column "id" is of type bigint but expression is of type character varying at character 36
+HINT:  You will need to rewrite or cast the expression.
+STATEMENT:  insert into breached_users values ($1)
+ERROR:  column "id" is of type bigint but expression is of type character varying at character 36
+HINT:  You will need to rewrite or cast the expression.
+STATEMENT:  insert into breached_users values ($1)
+ERROR:  syntax error at or near "exit" at character 1
+STATEMENT:  exit
+	insert into breached_users values(1, now(), now())
+	select * from breached_users where id = 1;
+ERROR:  syntax error at or near "exit" at character 1
+STATEMENT:  exit
+	insert into breached_users values(1, now(), now())
+	select * from breached_users where id = 1;
+ERROR:  database "accounts_development" is being accessed by other users
+DETAIL:  There are 10 other sessions using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "accounts_development"
+ERROR:  database "accounts_development" is being accessed by other users
+DETAIL:  There are 9 other sessions using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "accounts_development"
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2020-08-26 23:55:05 WIB
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received smart shutdown request
+LOG:  database system was interrupted; last known up at 2020-08-27 15:42:18 WIB
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  invalid record length at 0/1AF7790: wanted 24, got 0
+LOG:  redo is not required
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received smart shutdown request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2020-08-29 10:18:07 WIB
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(1) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(1) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(4152880) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(4152880) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(4152880) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(7649478) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(43102292) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(26446334) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(23603312) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(22590053) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(9658091) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16176817) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16815639) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(4152880) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(7649478) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(43102292) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(26446334) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(23603312) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(22590053) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(9658091) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16176817) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16815639) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(4152880) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(7649478) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(43102292) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(26446334) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(23603312) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(22590053) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(9658091) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16176817) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16815639) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(4152880) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(7649478) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(43102292) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(26446334) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(23603312) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(22590053) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(9658091) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16176817) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16815639) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(4152880) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(7649478) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(43102292) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(26446334) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(23603312) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(22590053) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(9658091) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16176817) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16815639) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(4152880) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(7649478) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(43102292) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(26446334) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(23603312) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(22590053) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(9658091) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16176817) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16815639) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(4152880) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(7649478) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(43102292) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(26446334) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(23603312) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(22590053) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(9658091) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16176817) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16815639) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(4152880) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(4152880) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(7649478) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(43102292) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(26446334) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(23603312) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(22590053) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(9658091) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16176817) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16815639) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(4152880) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(7649478) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(43102292) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(26446334) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(23603312) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(22590053) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(9658091) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16176817) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16815639) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(4152880) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(7649478) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(43102292) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(26446334) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(23603312) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(22590053) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(9658091) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16176817) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16815639) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(7649478) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(43102292) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(26446334) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(23603312) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(22590053) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(9658091) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16176817) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16815639) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(22590053) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(9658091) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16176817) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+ERROR:  duplicate key value violates unique constraint "breached_users_pkey"
+DETAIL:  Key (id)=(16815639) already exists.
+STATEMENT:  INSERT INTO "breached_users" ("id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+LOG:  received smart shutdown request
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2020-08-30 01:25:30 WIB
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  unexpected EOF on client connection with an open transaction

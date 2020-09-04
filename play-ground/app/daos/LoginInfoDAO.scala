@@ -5,12 +5,14 @@ import java.util.UUID
 import com.mohiva.play.silhouette.api.LoginInfo
 
 import models.Account
+import com.google.inject.ImplementedBy
 
 import scala.concurrent.Future
 
 /**
   * Give access to LoginInfo object
   */
+@ImplementedBy(classOf[LoginInfoDAOImpl])
 trait LoginInfoDAO {
 
   /**
@@ -40,5 +42,5 @@ trait LoginInfoDAO {
     * @param loginInfo login info
     * @return unit
     */
-  def saveUserLoginInfo(userID: UUID, loginInfo: LoginInfo): Future[Unit]
+  def saveAccountLoginInfo(userID: UUID, loginInfo: LoginInfo): Future[Unit]
 }

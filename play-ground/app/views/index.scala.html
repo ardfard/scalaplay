@@ -1,6 +1,8 @@
-@()
+@(optionAccount: Option[Account])
 
 @main("Welcome to Play") {
-
-<h1>Welcome to Play-ground!</h1>
+  @optionAccount match { 
+    case None => { <a href="@routes.Auth.login()">Login</a> }
+    case Some(account) => { Welcome, @account.fullName }
+  }
 }

@@ -26,7 +26,7 @@ class LoginInfoDAOImpl @Inject() (
     * @param loginInfo login info
     * @return unit
     */
-  override def saveUserLoginInfo(
+  override def saveAccountLoginInfo(
       accountID: UUID,
       loginInfo: LoginInfo
   ): Future[Unit] = {
