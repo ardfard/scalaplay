@@ -774,3 +774,86 @@ LOG:  MultiXact member wraparound protections are now enabled
 LOG:  database system is ready to accept connections
 LOG:  autovacuum launcher started
 LOG:  unexpected EOF on client connection with an open transaction
+LOG:  database system was interrupted; last known up at 2020-09-01 18:21:34 WIB
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  invalid record length at 0/1B91538: wanted 24, got 0
+LOG:  redo is not required
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
+LOG:  unexpected EOF on client connection with an open transaction
+ERROR:  null value in column "username" violates not-null constraint
+DETAIL:  Failing row contains (12, 0, null, null, edited name, null, null, null, 2020-09-04 04:44:42.418679, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 2020-09-04 04:44:42.418638, 2020-09-04 04:44:42.418638, null, null, null).
+STATEMENT:  INSERT INTO "user_contexts" ("user_id", "name", "last_request_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"
+LOG:  received smart shutdown request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system shutdown was interrupted; last known up at 2020-09-04 20:47:28 WIB
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  redo starts at 0/1BAE668
+LOG:  invalid record length at 0/1BAE6D8: wanted 24, got 0
+LOG:  redo done at 0/1BAE668
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  null value in column "username" violates not-null constraint
+DETAIL:  Failing row contains (48, 0, null, null, edited name, null, null, null, 2020-09-18 06:43:10.844903, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 2020-09-18 06:43:10.844863, 2020-09-18 06:43:10.844863, null, null, null).
+STATEMENT:  INSERT INTO "user_contexts" ("user_id", "name", "last_request_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "root" does not exist
+ERROR:  null value in column "official" violates not-null constraint
+DETAIL:  Failing row contains (95, 0, null, name, edited name, null, null, null, 2020-09-18 08:22:24.987768, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 2020-09-18 08:22:24.987728, 2020-09-18 08:22:24.987728, null, null, null).
+STATEMENT:  INSERT INTO "user_contexts" ("user_id", "username", "name", "last_request_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"
+LOG:  received smart shutdown request
+LOG:  autovacuum launcher shutting down
