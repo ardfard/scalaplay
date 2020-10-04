@@ -15,10 +15,12 @@ lazy val root = (project in file("."))
       "dev.zio" %% "zio" % zioVersion,
       "dev.zio" %% "zio-test" % zioVersion % "test",
       "dev.zio" %% "zio-test-sbt" % zioVersion % "test",
+      "dev.zio" %% "zio-macros" % zioVersion,
       "com.softwaremill.sttp.client" %% "core" % "2.2.8",
       "com.softwaremill.sttp.client" %% "async-http-client-backend-zio" % "2.2.8"
     ),
-    testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework")
+    testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework"),
+    scalacOptions += "-Ymacro-annotations"
   )
 
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.

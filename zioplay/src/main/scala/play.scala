@@ -2,6 +2,10 @@ package play
 import zio.console._
 import zio._
 import scala.concurrent.duration.Duration.Infinite
+import java.net.URL
+import zio.blocking.Blocking
+import play.TestLayer.UserRepo
+import zio.macros.accessible
 
 object Clocked {
   import duration._
@@ -20,7 +24,8 @@ object TestSttp {
     val req =
       basicRequest
         .cookie("hello", "dangdut")
-        .get("https://httpbin.org/get")
+    // .get("https://httpbin.org/get")
+
   }
 }
 
@@ -52,6 +57,7 @@ object TestLayer {
   case class User(userId: UserId)
   final case class DBError()
 
+  @accessible
   object UserRepo {
     trait Service {
       def getUser(userId: UserId): IO[DBError, Option[User]]
@@ -59,25 +65,61 @@ object TestLayer {
     }
 
     // This simple live version depends only on a DB Connection
-    val inMemory: Layer[Nothing, UserRepo] = ZLayer.succeed(
-      new Service {
-        def getUser(userId: UserId): IO[DBError, Option[User]] = UIO(???)
-        def createUser(user: User): IO[DBError, Unit] = UIO(???)
-      }
-    )
+    val inMemory: Layer[Nothing, UserRepo] = ZLayer.fromEffect(for {
+      ref <- Ref.make(Map.empty[UserId, User])
+    } yield (new Service {
+      def getUser(userId: UserId): IO[DBError, Option[User]] =
+        for {
+          m <- ref.get
+        } yield m.get(userId)
+      def createUser(user: User): IO[DBError, Unit] =
+        ref.modify(m => ((), m.updated(user.userId, user)))
 
-    //accessor methods
-    def getUser(userId: UserId): ZIO[UserRepo, DBError, Option[User]] =
-      ZIO.accessM(_.get.getUser(userId))
-
-    def createUser(user: User): ZIO[UserRepo, DBError, Unit] =
-      ZIO.accessM(_.get.createUser(user))
+    }))
   }
 
   val testRepo: ZLayer[Any, Nothing, UserRepo] = ZLayer.succeed(???)
 }
 
 object Main extends zio.App {
-  def run(args: List[String]): zio.URIO[zio.ZEnv, ExitCode] =
-    TestThread.run().exitCode
+  def getUrl(url: URL): ZIO[Blocking, Exception, String] = {
+    import zio.blocking.effectBlocking
+
+    def getUrlImpl(url: URL): String =
+      scala.io.Source.fromURL(url)(scala.io.Codec.UTF8).mkString
+
+    effectBlocking(getUrlImpl(url)).refineOrDie {
+      case e: Exception => e
+    }
+  }
+
+  import TestLayer._
+
+  def run(args: List[String]): zio.URIO[zio.ZEnv, ExitCode] = {
+    var user = User(1)
+    val created: ZIO[UserRepo, DBError, Boolean] = for {
+      maybeUser <- UserRepo.getUser(user.userId)
+      res <- maybeUser.fold(UserRepo.createUser(user).as(true))(_ =>
+        ZIO.succeed(false)
+      )
+    } yield res
+
+    val create100: ZIO[UserRepo, DBError, Unit] =
+      ZIO.foreachParN_(50)(0 to 100)(userid => {
+        val user = User(userid)
+        UserRepo.createUser(user)
+      })
+
+    val getall: ZIO[UserRepo, DBError, List[User]] =
+      ZIO
+        .collectAllParN(50) {
+          (0 to 100).map(UserRepo.getUser(_))
+        }
+        .map(_.toList.flatten)
+
+    (for {
+      users <- (create100 *> getall).provideLayer(UserRepo.inMemory)
+      _ <- ZIO.foreach_(users)(u => putStrLn(s"$u"))
+    } yield (putStrLn("hello"))).flatten.exitCode
+  }
 }
