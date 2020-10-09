@@ -1,2 +1,10 @@
-val s = Var(0)
-s
+class Test {
+  def apply() = {
+    42
+  }
+}
+
+val t = new Test
+t()
+
+import calculator
