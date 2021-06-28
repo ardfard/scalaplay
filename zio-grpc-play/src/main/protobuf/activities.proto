@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package scalagrpc;
+
+option java_package = "id.belajar.wartek.scalagrpc";
+
+import "google/api/annotations.proto";
+
+service Activities {
+    rpc LoggedIn(LoggedInRequest) returns (LoggedInResponse){
+        option (google.api.http) = {
+            post: "/activities/users/{user}/schools/{school}"
+            body: "*"
+        };
+    };
+
+}
+
+message LoggedInRequest {
+    string activity = 1;
+    string school = 2;
+    string user = 3;
+}
+
+message LoggedInResponse {
+    int32 saved_at = 1;
+}
