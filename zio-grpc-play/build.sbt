@@ -13,6 +13,8 @@ lazy val root = (project in file("."))
       ziogrpc,
       "io.grpc" % "grpc-netty" % "1.38.1",
       "com.thesamet.scalapb" %% "scalapb-runtime-grpc" % scalapb.compiler.Version.scalapbVersion,
+      "com.thesamet.scalapb.common-protos" %% "proto-google-common-protos-scalapb_0.9" % "1.17.0-0" % "protobuf",
+      "com.thesamet.scalapb.common-protos" %% "proto-google-common-protos-scalapb_0.9" % "1.17.0-0"
     ),
     PB.targets in Compile := Seq(
         scalapb.gen(grpc = true) -> (sourceManaged in Compile).value / "scalapb",
