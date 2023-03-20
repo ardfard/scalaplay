@@ -15,11 +15,21 @@ lazy val root = (project in file("."))
       `zio-test-sbt`,
       `zio-http`,
       `zio-http-test`,
+      `zio-macro`,
+      `zio-config`,
+      `zio-metrics`,
+      `zio-metrics-prometheus`,
+      `zio-json`,
+      `zio-logging`,
+      `zio-logging-slf4j`,
+      logback,
+      `logback-logstash`,
     ),
   )
   .settings(
     Docker / version          := version.value,
     Compile / run / mainClass := Option("net.ardfard.ziohttpplay.Ziohttpplay"),
+    scalacOptions += "-Ymacro-annotations",
   )
 
 addCommandAlias("fmt", "scalafmt; Test / scalafmt; sFix;")

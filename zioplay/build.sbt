@@ -1,7 +1,7 @@
 import Dependencies._
 
 ThisBuild / organization := "net.ardfard"
-ThisBuild / scalaVersion := "3.0.0"
+ThisBuild / scalaVersion := "3.0.1"
 
 ThisBuild / scalacOptions ++=
   Seq(
@@ -35,7 +35,8 @@ lazy val commonSettings = Seq(
 lazy val dependencies = Seq(
   libraryDependencies ++= Seq(
     // main dependencies
-    "dev.zio" %% "zio-test" % "1.0.9"
+    "dev.zio" %% "zio" % "2.0.0-M1",
+    "dev.zio" %% "zio-streams" % "2.0.0-M1"
   ),
   // libraryDependencies ++= Seq(
     // org.scalatest.scalatest,

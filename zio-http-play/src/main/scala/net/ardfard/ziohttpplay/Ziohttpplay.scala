@@ -3,7 +3,18 @@ package net.ardfard.ziohttpplay
 import zhttp.http._
 import zhttp.service.Server
 import zio._
+import zio.logging.backend.SLF4J
+import zio.metrics._
+import zio.metrics.prometheus2._
+import zio.metrics.prometheus.helpers._
 import java.util.concurrent.TimeUnit
+import net.ardfard.ziohttpplay.services.Logger
+import net.ardfard.ziohttpplay.services.Gitlab
+import net.ardfard.ziohttpplay.services.PipelinePayload
+import net.ardfard.ziohttpplay.services.GitlabLive
+import zio.logging.LogFormat
+import org.slf4j.LoggerFactory
+import ch.qos.logback.classic.encoder.PatternLayoutEncoder
 
 object Ziohttpplay extends ZIOAppDefault {
   val app: HttpApp[Any, Nothing] = Http.collect[Request] {
@@ -30,7 +41,16 @@ object Ziohttpplay extends ZIOAppDefault {
     Console.printLine(s"Response: ${resp}").mapError(Some(_)) *> ZIO.succeed(resp)
   }
 
+  val logFormat    = LogFormat.default
+  val loggingLayer = SLF4J.slf4j(LogLevel.Debug, logFormat)
+
+  def trying: ZIO
   // Run it like any simple app
-  override def run: ZIO[Environment with ZIOAppArgs with Scope, Any, Any] =
-    Server.start(8090, (app ++ appZIO) @@ mid @@ mid2).exitCode
+  override def run: ZIO[Environment with ZIOAppArgs with Scope, Any, Any] = (for {
+    _ <- ZIO.logAnnotate(LogAnnotation("method", "GET"), LogAnnotation("status", "200"))(
+      ZIO.log("Hello !"),
+    )
+    _ <- ZIO.log("tutung")
+  } yield ()).provide(zio.logging.removeDefaultLoggers, loggingLayer).exitCode
 }
+
