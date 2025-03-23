@@ -1,0 +1,16 @@
+{
+  "name": "scala-cli",
+  "argv": [
+    "/home/ardfard/.local/share/coursier/bin/.scala-cli.aux",
+    "bsp",
+    "--json-options",
+    "/home/ardfard/code/scalaplay/quill/.scala-build/ide-options-v2.json",
+    "/home/ardfard/code/scalaplay/quill"
+  ],
+  "version": "0.1.11",
+  "bspVersion": "2.0.0",
+  "languages": [
+    "scala",
+    "java"
+  ]
+}
